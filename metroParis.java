@@ -2,59 +2,74 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Stack;
+import java.util.HashMap;
 
 public class metroParis {
 	private int nbStations;
 	private int nbConnexions;
-	private ArrayList<Station> stations;
+	private HashMap<Integer, Station> stations;
 
 	public static void main(String[] args) {
 		metroParis metro = new metroParis();
+
 		Trajet trajet = metro.trajetLePlusRapideDijkstra("Saint-Jacques", "Porte d'Italie");
 		System.out.println(trajet.getTempsRequis());
 	}
 
 	public metroParis() {
 		try {
-			this.stations = new ArrayList<Station>();
+			this.stations = new HashMap<Integer, Station>();
 
 			FileReader fileReader = new FileReader("./Metro.txt");
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
-			String data = bufferedReader.readLine();
 
+			// lire la premiere ligne
+			String data = bufferedReader.readLine();
+			// separer le nombre de stations et de connexions
 			String[] line = data.split(" ", 2);
 			nbStations = Integer.parseInt(line[0]);
 			nbConnexions = Integer.parseInt(line[1]);
 
+			// lire le reste du fichier
 			int section = 0;
 			while ((data = bufferedReader.readLine()) != null) {
+				// si on arrive a la fin d'une section
 				if (data.contains("$")) {
 					section++;
 					continue;
 				}
+
+				// separer les donnees
 				line = data.split(" ");
-				Station station;
+
 				switch (section) {
 					// ajouter les stations
-					case 0:
+					case 0: {
 						line = data.split(" ", 2);
-						station = new Station(Integer.parseInt(line[0]), line[1]);
-						this.stations.add(station);
+						int numero = Integer.parseInt(line[0]);
+						String nom = line[1];
+						Station station = new Station(numero, nom);
+						this.stations.put(numero, station);
 						break;
+					}
 					// ajouter les positions
-					case 1:
-						station = this.stations.get(Integer.parseInt(line[0]));
-						station.setXPosition(Integer.parseInt(line[1]));
-						station.setYPosition(Integer.parseInt(line[2]));
+					case 1: {
+						int numero = Integer.parseInt(line[0]);
+						int x = Integer.parseInt(line[1]);
+						int y = Integer.parseInt(line[2]);
+						Station station = this.stations.get(numero);
+						Position position = new Position(x, y);
+						station.setPosition(position);
 						break;
+					}
 					// ajouter les connexions
-					case 2:
-						station = this.stations.get(Integer.parseInt(line[0]));
-						Station station2 = this.stations.get(Integer.parseInt(line[1]));
+					case 2: {
+						Station depart = this.stations.get(Integer.parseInt(line[0]));
+						Station arrivee = this.stations.get(Integer.parseInt(line[1]));
 						int temps = Integer.parseInt(line[2]);
-						station.addConnexion(station2, temps);
+						depart.addConnexion(arrivee, temps);
 						break;
+					}
 					default:
 						break;
 				}
@@ -69,14 +84,14 @@ public class metroParis {
 
 	public void accessible(Station station) {
 
-		ArrayList<Station> connexions = station.getConnexions();
-		for (Station connexion : connexions) {
+		ArrayList<Connection> connexions = station.getConnexions();
+		for (Connection connexion : connexions) {
 
 		}
 	}
 
-	public Station getStationNom(String nom) {
-		for (Station station : stations) {
+	public Station getStation(String nom) {
+		for (Station station : stations.values()) {
 			if (station.getNom().equals(nom)) {
 				return station;
 			}
@@ -87,35 +102,10 @@ public class metroParis {
 	// retourne le trajet le plus rapide entre 2 stations, et le temps requis pour
 	// ce trajet.
 	public Trajet trajetLePlusRapideDijkstra(String debut, String fin) {
-		Station stationDebut = getStationNom(debut);
-		Station stationFin = getStationNom(fin);
-		Trajet trajet = new Trajet();
-		trajet.ajouterStation(stationDebut, 0);
-		return recursionDijkstra(trajet, stationFin);
-	}
-
-	private Trajet recursionDijkstra(Trajet trajet, Station fin) {
-		Station station = trajet.getDerniereStation();
-		ArrayList<Station> connexions = station.getConnexions();
-
-		if (station.equals(fin) || connexions.size() == 0) {
-			return trajet;
-		}
-
-		ArrayList<Trajet> trajets = new ArrayList<Trajet>();
-		for (int i = 0; i < connexions.size(); i++) {
-			Station connexion = connexions.get(i);
-			trajet.ajouterStation(connexion, station.getTempsByI(i));
-			trajets.add(recursionDijkstra(trajet, fin));
-		}
-
-		Trajet trajetMin = trajets.get(0);
-		for (Trajet trajet2 : trajets) {
-			if (trajet2.getTempsRequis() < trajetMin.getTempsRequis()) {
-				trajetMin = trajet2;
-			}
-		}
-		return trajetMin;
+		Station stationDebut = getStation(debut);
+		Station stationFin = getStation(fin);
+		Dijkstra dijkstra = new Dijkstra(stationDebut, stationFin, stations);
+		return dijkstra.getTrajet();
 	}
 
 	// //retourne le trajet le plus rapide entre 2 stations, et le temps requis pour

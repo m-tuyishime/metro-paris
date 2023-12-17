@@ -2,18 +2,18 @@
 0000 Abbesses
 0001 Alexandre Dumas
 0002 Alma Marceau
-0003 AlÈsia
+0003 Al√©sia
 0004 Anatole France
 0005 Anvers
 0006 Argentine
-0007 Arts et MÈtiers
-0008 Arts et MÈtiers
-0009 AssemblÈe Nationale
+0007 Arts et M√©tiers
+0008 Arts et M√©tiers
+0009 Assembl√©e Nationale
 0010 Aubervilliers-Pantin, Quatre Chemins
-0011 Avenue …mile Zola
+0011 Avenue √âmile Zola
 0012 Avron
-0013 BarbËs Rochechouart
-0014 BarbËs Rochechouart
+0013 Barb√®s Rochechouart
+0014 Barb√®s Rochechouart
 0015 Basilique de Saint-Denis
 0016 Bastille
 0017 Bastille
@@ -23,56 +23,56 @@
 0021 Belleville
 0022 Bercy
 0023 Bercy
-0024 BibliothËque FranÁois Mitterand
+0024 Biblioth√®que Fran√ßois Mitterrand
 0025 Billancourt
 0026 Bir-Hakeim
 0027 Blanche
 0028 Bobigny, Pablo Picasso
 0029 Bobigny-Pantin, Raymond Queneau
-0030 BoissiËre
+0030 Boissi√®re
 0031 Bolivar
 0032 Bonne Nouvelle
 0033 Bonne Nouvelle
 0034 Botzaris
 0035 Boucicaut
-0036 Boulogne, Jean JaurËs
+0036 Boulogne, Jean Jaur√®s
 0037 Boulogne, Pont de Saint-Cloud, Rond Point Rhin et Danube
 0038 Bourse
 0039 Brochant
-0040 BrÈguet-Sabin
+0040 Br√©guet-Sabin
 0041 Buttes Chaumont
 0042 Buzenval
-0043 BÈrault
+0043 B√©rault
 0044 Cadet
 0045 Cambronne
 0046 Campo-Formio
 0047 Cardinal Lemoine
 0048 Carrefour Pleyel
 0049 Censier Daubenton
-0050 Champs …lysÈes, ClÈmenceau
-0051 Champs …lysÈes, ClÈmenceau
-0052 Chardon Lag‚che
-0053 Charenton-…coles
+0050 Champs √âlys√©es, Cl√©menceau
+0051 Champs √âlys√©es, Cl√©menceau
+0052 Chardon Lagache
+0053 Charenton-√âcoles
 0054 Charles Michels
-0055 Charles de Gaulle, …toile
-0056 Charles de Gaulle, …toile
-0057 Charles de Gaulle, …toile
+0055 Charles de Gaulle, √âtoile
+0056 Charles de Gaulle, √âtoile
+0057 Charles de Gaulle, √âtoile
 0058 Charonne
-0059 ChaussÈe d'Antin, La Fayette
-0060 ChaussÈe d'Antin, La Fayette
+0059 Chauss√©e d'Antin, La Fayette
+0060 Chauss√©e d'Antin, La Fayette
 0061 Chemin Vert
 0062 Chevaleret
-0063 Ch‚teau Landon
-0064 Ch‚teau Rouge
-0065 Ch‚teau d'Eau
-0066 Ch‚teau de Vincennes
-0067 Ch‚telet
-0068 Ch‚telet
-0069 Ch‚telet
-0070 Ch‚telet
-0071 Ch‚telet
-0072 Ch‚tillon-Montrouge
-0073 CitÈ
+0063 Ch√¢teau Landon
+0064 Ch√¢teau Rouge
+0065 Ch√¢teau d'Eau
+0066 Ch√¢teau de Vincennes
+0067 Ch√¢telet
+0068 Ch√¢telet
+0069 Ch√¢telet
+0070 Ch√¢telet
+0071 Ch√¢telet
+0072 Ch√¢tillon-Montrouge
+0073 Cit√©
 0074 Cluny, La Sorbonne
 0075 Colonel Fabien
 0076 Commerce
@@ -83,14 +83,14 @@
 0081 Corentin Celton
 0082 Corentin-Cariou
 0083 Corvisart
-0084 Cour Saint-…milion
+0084 Cour Saint-√âmilion
 0085 Courcelles
 0086 Couronnes
-0087 CrimÈe
+0087 Crim√©e
 0088 Croix de Chavaux
-0089 CrÈteil-PrÈfecture
-0090 CrÈteil-UniversitÈ
-0091 CrÈteil-l'Echat, HÙpital Henri Mondor
+0089 Cr√©teil-Pr√©fecture
+0090 Cr√©teil-Universit√©
+0091 Cr√©teil-l'√âchat, H√¥pital Henri Mondor
 0092 Danube
 0093 Daumesnil
 0094 Daumesnil
@@ -101,19 +101,19 @@
 0099 Duroc
 0100 Duroc
 0101 Edgar Quinet
-0102 Esplanade de la DÈfense
+0102 Esplanade de la D√©fense
 0103 Europe
 0104 Exelmans
 0105 Faidherbe-Chaligny
-0106 FalguiËre
+0106 Falgui√®re
 0107 Filles du Calvaire
 0108 Fort d'Aubervilliers
 0109 Franklin D. Roosevelt
 0110 Franklin D. Roosevelt
-0111 FÈlix Faure
-0112 Gabriel PÈri, AsniËres-Gennevilliers
-0113 GaitÈ
-0114 GalliÈni
+0111 F√©lix Faure
+0112 Gabriel P√©ri, Asni√®res-Gennevilliers
+0113 Ga√Æt√©
+0114 Gallieni
 0115 Gambetta
 0116 Gambetta
 0117 Gare d'Austerlitz
@@ -127,29 +127,29 @@
 0125 Gare du Nord
 0126 Garibaldi
 0127 George V
-0128 GlaciËre
+0128 Glaci√®re
 0129 Goncourt
-0130 Grande Arche de la DÈfense
-0131 Guy MÙquet
+0130 Grande Arche de la D√©fense
+0131 Guy M√¥quet
 0132 Havre Caumartin
 0133 Havre Caumartin
 0134 Hoche
-0135 HÙtel de Ville
-0136 HÙtel de Ville
+0135 H√¥tel de Ville
+0136 H√¥tel de Ville
 0137 Invalides
 0138 Invalides
-0139 IÈna
+0139 I√©na
 0140 Jacques Bonsergent
 0141 Jasmin
-0142 JaurËs
-0143 JaurËs
-0144 JaurËs
+0142 Jaur√®s
+0143 Jaur√®s
+0144 Jaur√®s
 0145 Javel
 0146 Jourdain
 0147 Jules Joffrin
 0148 Jussieu
 0149 Jussieu
-0150 KlÈber
+0150 Kl√©ber
 0151 La Chapelle
 0152 La Courneuve, 8 Mai 1945
 0153 La Fourche
@@ -159,15 +159,15 @@
 0157 La Muette
 0158 La Tour-Maubourg
 0159 Lamarck Caulaincourt
-0160 LaumiËre
-0161 Le Kremlin-BicÍtre
+0160 Laumi√®re
+0161 Le Kremlin-Bic√™tre
 0162 Le Peletier
 0163 Ledru Rollin
 0164 Les Gobelins
 0165 Les Halles
 0166 Les Sablons
-0167 LibertÈ
-0168 LiËge
+0167 Libert√©
+0168 Li√®ge
 0169 Louis Blanc
 0170 Louis Blanc
 0171 Louise Michel
@@ -187,15 +187,16 @@
 0185 Maisons-Alfort les Juilliottes
 0186 Maisons-Alfort, Stade
 0187 Malakoff-Plateau de Vanves
-0188 Malakoff-Rue …tienne Dolet
+0188 Malakoff-Rue √âtienne Dolet
 0189 Malesherbes
-0190 MaraÓchers
+0190 Mara√Æchers
 0191 Marcadet Poissonniers
 0192 Marcadet Poissonniers
 0193 Marcel Sembat
 0194 Marx Dormoy
-0195 Maubert MutualitÈ
+0195 Maubert Mutualit√©
 0196 Michel Ange Auteuil
+0197 Michel Ange Aute
 0197 Michel Ange Auteuil
 0198 Michel Ange Molitor
 0199 Michel Ange Molitor
@@ -210,7 +211,7 @@
 0208 Montparnasse Bienvenue
 0209 Montparnasse Bienvenue
 0210 Mouton-Duvernet
-0211 MÈnilmontant
+0211 M√©nilmontant
 0212 Nation
 0213 Nation
 0214 Nation
@@ -220,14 +221,14 @@
 0218 Notre-Dame-des-Champs
 0219 Oberkampf
 0220 Oberkampf
-0221 OdÈon
-0222 OdÈon
-0223 OpÈra
-0224 OpÈra
-0225 OpÈra
+0221 Od√©on
+0222 Od√©on
+0223 Op√©ra
+0224 Op√©ra
+0225 Op√©ra
 0226 Ourcq
-0227 Palais Royal, MusÈe du Louvre
-0228 Palais Royal, MusÈe du Louvre
+0227 Palais Royal, Mus√©e du Louvre
+0228 Palais Royal, Mus√©e du Louvre
 0229 Parmentier
 0230 Passy
 0231 Pasteur
@@ -246,22 +247,22 @@
 0244 Place d'Italie
 0245 Place de Clichy
 0246 Place de Clichy
-0247 Place des FÍtes
-0248 Place des FÍtes
+0247 Place des F√™tes
+0248 Place des F√™tes
 0249 Plaisance
-0250 PoissonniËre
-0251 Pont de Levallois, BÈcon
+0250 Poissonni√®re
+0251 Pont de Levallois, B√©con
 0252 Pont de Neuilly
-0253 Pont de SËvres
+0253 Pont de S√®vres
 0254 Pont-Marie
 0255 Pont-Neuf
 0256 Porte Dauphine
-0257 Porte DorÈe
+0257 Porte Dor√©e
 0258 Porte Maillot
 0259 Porte d'Auteuil
 0260 Porte d'Italie
 0261 Porte d'Ivry
-0262 Porte d'OrlÈans
+0262 Porte d'Orl√©ans
 0263 Porte de Bagnolet
 0264 Porte de Champerret
 0265 Porte de Charenton
@@ -279,15 +280,15 @@
 0277 Porte de la Villette
 0278 Porte des Lilas
 0279 Porte des Lilas
-0280 PrÈ-Saint-Gervais
+0280 Pr√©-Saint-Gervais
 0281 Pyramides
 0282 Pyramides
-0283 PyrÈnÈes
-0284 PËre Lachaise
-0285 PËre Lachaise
-0286 PÈreire
+0283 Pyr√©n√©es
+0284 P√®re Lachaise
+0285 P√®re Lachaise
+0286 P√©reire
 0287 Quai de la Gare
-0288 Quai de la RapÈe
+0288 Quai de la Rap√©e
 0289 Quatre Septembre
 0290 Rambuteau
 0291 Ranelagh
@@ -308,36 +309,36 @@
 0306 Rue de la Pompe
 0307 Rue des Boulets
 0308 Rue du Bac
-0309 RÈaumur SÈbastopol
-0310 RÈaumur SÈbastopol
-0311 RÈpublique
-0312 RÈpublique
-0313 RÈpublique
-0314 RÈpublique
-0315 RÈpublique
+0309 R√©aumur S√©bastopol
+0310 R√©aumur S√©bastopol
+0311 R√©publique
+0312 R√©publique
+0313 R√©publique
+0314 R√©publique
+0315 R√©publique
 0316 Saint-Ambroise
 0317 Saint-Augustin
 0318 Saint-Denis-Porte de Paris
-0319 Saint-Denis-UniversitÈ
+0319 Saint-Denis-Universit√©
 0320 Saint-Fargeau
 0321 Saint-Francois Xavier
 0322 Saint-Georges
-0323 Saint-Germain-des-PrÈs
+0323 Saint-Germain-des-Pr√©s
 0324 Saint-Jacques
 0325 Saint-Lazare
 0326 Saint-Lazare
 0327 Saint-Lazare
-0328 Saint-MandÈ, Tourelle
+0328 Saint-Mand√©, Tourelle
 0329 Saint-Marcel
 0330 Saint-Michel
 0331 Saint-Paul, Le Marais
 0332 Saint-Philippe du Roule
 0333 Saint-Placide
 0334 Saint-Sulpice
-0335 Saint-SÈbastien-Froissart
+0335 Saint-S√©bastien-Froissart
 0336 Sentier
 0337 Simplon
-0338 SolfÈrino
+0338 Solf√©rino
 0339 Stalingrad
 0340 Stalingrad
 0341 Stalingrad
@@ -345,36 +346,36 @@
 0343 Strasbourg Saint-Denis
 0344 Strasbourg Saint-Denis
 0345 Sully Morland
-0346 SËvres Babylone
-0347 SËvres Babylone
-0348 SËvres Lecourbe
-0349 SÈgur
+0346 S√®vres Babylone
+0347 S√®vres Babylone
+0348 S√®vres Lecourbe
+0349 S√©gur
 0350 Temple
 0351 Ternes
 0352 Tolbiac
-0353 TrinitÈ d'Estienne d'Orves
-0354 TrocadÈro
-0355 TrocadÈro
+0353 Trinit√© d'Estienne d'Orves
+0354 Trocad√©ro
+0355 Trocad√©ro
 0356 Tuileries
-0357 TÈlÈgraphe
+0357 T√©l√©graphe
 0358 Vaneau
 0359 Varenne
 0360 Vaugirard
 0361 Vavin
 0362 Victor Hugo
 0363 Villejuif, Louis Aragon
-0364 Villejuif, LÈo Lagrange
+0364 Villejuif, L√©o Lagrange
 0365 Villejuif, P. Vaillant Couturier
 0366 Villiers
 0367 Villiers
 0368 Volontaires
 0369 Voltaire
 0370 Wagram
-0371 …cole Militaire
-0372 …cole VÈtÈrinaire de Maisons-Alfort
-0373 …glise d'Auteuil
-0374 …glise de Pantin
-0375 …tienne Marcel
+0371 √âcole Militaire
+0372 √âcole V√©t√©rinaire de Maisons-Alfort
+0373 √âglise d'Auteuil
+0374 √âglise de Pantin
+0375 √âtienne Marcel
 $
 0000 308 536
 0001 472 386
