@@ -5,7 +5,7 @@ public class Dijkstra {
 
     public Dijkstra(Station depart, Station arrivee, HashMap<Integer, Station> stations) {
         // initialiser le trajet
-        this.trajet = new Trajet();
+        this.trajet = new Trajet(depart, arrivee);
 
         // initialiser les temps requis pour aller de la station de depart a toutes les
         // autres stations a l'infini
@@ -15,10 +15,9 @@ public class Dijkstra {
                 this.trajet.ajouterTempsAStation(station, 0);
             else {
                 this.trajet.ajouterTempsAStation(station, Integer.MAX_VALUE);
+                // marquer les stations comme non visitees
+                this.trajet.ajouterStationAVisiter(station);
             }
-
-            // marquer toutes les stations comme non visitees
-            this.trajet.ajouterStationAVisiter(station);
         }
     }
 
