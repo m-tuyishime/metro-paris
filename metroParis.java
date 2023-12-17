@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 public class metroParis {
 	private int nbStations;
@@ -14,6 +15,7 @@ public class metroParis {
 
 		Trajet trajet = metro.trajetLePlusRapideDijkstra("Abbesses", "Porte d'Italie");
 		System.out.println(trajet.getTempsRequis());
+		System.out.println(metro.stationsCritiques().size());
 	}
 
 	public metroParis() {
@@ -82,14 +84,6 @@ public class metroParis {
 		}
 	}
 
-	public void accessible(Station station) {
-
-		ArrayList<Connection> connexions = station.getConnexions();
-		for (Connection connexion : connexions) {
-
-		}
-	}
-
 	public Station getStation(String nom) {
 		for (Station station : stations.values()) {
 			if (station.getNom().equals(nom)) {
@@ -118,11 +112,78 @@ public class metroParis {
 		return bellManFord.getTrajet();
 	}
 
+	// determine si le metro est connexe malgre la fermeture d'une station
+	public boolean accessible(Station stationFermee) {
+		// Marquer toutes les stations comme non visitées
+		HashMap<Integer, Boolean> visite = new HashMap<>();
+		for (Integer numero : stations.keySet()) {
+			visite.put(numero, false);
+		}
+
+		// Créer une file d'attente pour le parcours en largeur
+		LinkedList<Station> queue = new LinkedList<>();
+
+		// Obtenez n'importe quelle station comme point de départ (qui n'est pas la
+		// station fermée)
+		Station start = null;
+		for (Station station : stations.values()) {
+			// Si la station est en service, elle peut être utilisée comme point de départ
+			if (station.getEnService()) {
+				start = station;
+				break;
+			}
+		}
+
+		// Marquez la station de départ comme visitée et l'ajoutez à la file d'attente
+		visite.put(start.getNumero(), true);
+		queue.add(start);
+
+		while (queue.size() != 0) {
+			// Retirez un élément de la file d'attente
+			Station station = queue.poll();
+
+			// Parcourez toutes les stations accessibles à partir de la station actuelle
+			for (Connection connection : station.getConnexions()) {
+				Station voisine = connection.getDestination();
+				// Si la station voisine a deja ete visitee, ignorez-la
+				if (visite.get(voisine.getNumero())) {
+					continue;
+				}
+
+				// Marquez cette station comme visitée et ajoutez-la à la file d'attente
+				visite.put(voisine.getNumero(), true);
+				queue.add(voisine);
+			}
+		}
+
+		// Vérifiez si toutes les stations ont été visitées
+		for (Station station : stations.values()) {
+			if (!visite.get(station.getNumero())) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
 	// //retourne la liste des stations qui, si elles sont ferm�s, rendent au moins
 	// une station innateignable
-	// public ArrayList<Station> stationsCritiques()
-	// {
+	public ArrayList<Station> stationsCritiques() {
+		ArrayList<Station> stationsCritiques = new ArrayList<>();
+		// iterer sur toutes les stations
+		for (Station station : stations.values()) {
+			// fermer la station
+			station.setEnService(false);
+			// si le metro n'est plus connexe
+			if (!accessible(station)) {
+				// ajouter la station a la liste des stations critiques
+				stationsCritiques.add(station);
+			}
+			// remettre la station en service
+			station.setEnService(true);
+		}
+		return stationsCritiques;
 
-	// }
+	}
 
 }
