@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Dijkstra {
-    private Trajet trajet;
+    protected Trajet trajet;
 
     public Dijkstra(Station depart, Station arrivee, HashMap<Integer, Station> stations) {
         // initialiser le trajet

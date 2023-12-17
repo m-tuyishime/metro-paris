@@ -12,7 +12,7 @@ public class metroParis {
 	public static void main(String[] args) {
 		metroParis metro = new metroParis();
 
-		Trajet trajet = metro.trajetLePlusRapideDijkstra("Saint-Jacques", "Porte d'Italie");
+		Trajet trajet = metro.trajetLePlusRapideDijkstra("Abbesses", "Porte d'Italie");
 		System.out.println(trajet.getTempsRequis());
 	}
 
@@ -110,10 +110,13 @@ public class metroParis {
 
 	// //retourne le trajet le plus rapide entre 2 stations, et le temps requis pour
 	// ce trajet, avec l'algo de BellManFord.
-	// public Trajet trajetLePlusRapideBellManFord (String debut, String fin) {
-
-	// return void;
-	// }
+	public Trajet trajetLePlusRapideBellManFord(String debut, String fin) {
+		Station stationDebut = getStation(debut);
+		Station stationFin = getStation(fin);
+		BellManFord bellManFord = new BellManFord(stationDebut, stationFin, stations);
+		bellManFord.checkCycleNegatif();
+		return bellManFord.getTrajet();
+	}
 
 	// //retourne la liste des stations qui, si elles sont ferm�s, rendent au moins
 	// une station innateignable
