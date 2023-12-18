@@ -108,7 +108,6 @@ public class metroParis {
 		Station stationDebut = getStation(debut);
 		Station stationFin = getStation(fin);
 		BellManFord bellManFord = new BellManFord(stationDebut, stationFin, stations);
-		bellManFord.checkCycleNegatif();
 		return bellManFord.getTrajet();
 	}
 
@@ -145,8 +144,9 @@ public class metroParis {
 			// Parcourez toutes les stations accessibles à partir de la station actuelle
 			for (Connection connection : station.getConnexions()) {
 				Station voisine = connection.getDestination();
-				// Si la station voisine a deja ete visitee, ignorez-la
-				if (visite.get(voisine.getNumero())) {
+				// Si la station voisine a deja ete visitee ou si elle est fermee,
+				// ignorez-la
+				if (visite.get(voisine.getNumero()) || !voisine.getEnService()) {
 					continue;
 				}
 

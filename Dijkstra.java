@@ -41,16 +41,19 @@ public class Dijkstra {
                 Station destination = connexion.getDestination();
                 // le temps pour aller de la station la plus proche a la destination
                 int tempsConnection = connexion.getTemps();
-                // le temps actuel pour aller de la station de depart a la destination
-                int tempsActuel = trajet.getTempsAStation(destination);
-                // le nouveau temps pour aller de la station de depart a la destination
-                // en passant par la station la plus proche
-                int tempsNouveau = trajet.getTempsAStation(plusProche) + tempsConnection;
 
-                // si le nouveau temps est plus petit que le temps actuel
-                if (tempsNouveau < tempsActuel) {
-                    // mettre a jour le temps pour aller de la station de depart a la destination
-                    trajet.ajouterTempsAStation(destination, tempsNouveau);
+                // check pour overflow
+                if (trajet.getTempsAStation(plusProche) != Integer.MAX_VALUE) {
+                    // le nouveau temps pour aller de la station de depart a la destination
+                    // en passant par la station la plus proche
+                    int tempsNouveau = trajet.getTempsAStation(plusProche) + tempsConnection;
+                    // le temps actuel pour aller de la station de depart a la destination
+                    int tempsActuel = trajet.getTempsAStation(destination);
+                    // si le nouveau temps est plus petit que le temps actuel
+                    if (tempsNouveau < tempsActuel) {
+                        // mettre a jour le temps pour aller de la station de depart a la destination
+                        trajet.ajouterTempsAStation(destination, tempsNouveau);
+                    }
                 }
             }
         }
